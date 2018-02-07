@@ -8,4 +8,13 @@ package conditions_loops.labs;
  */
 
 public class Exercise_09 {
+    public static void main (String[]args){
+        int a=0;
+
+        while (a<=100){
+            a++;
+            System.out.println(a);
+            if (a*a>=100) break;
+        }
+    }
 }

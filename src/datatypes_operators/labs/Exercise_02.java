@@ -23,7 +23,21 @@ public class Exercise_02 {
 
     public static void main(String[] args) {
 
-        // write code here
+        int a = 10;
+        double b = a;
+
+        System.out.println(b);
+
+        //no information loss
+
+        double c = 10.5;
+        int d = (int) c;
+
+        System.out.println(d);
+
+        //information is loss because int cannot hold decimal value
+
+
 
     }
 }

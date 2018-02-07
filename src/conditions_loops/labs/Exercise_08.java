@@ -8,4 +8,11 @@ package conditions_loops.labs;
  */
 
 public class Exercise_08 {
+    public static void main (String[]args){
+        int a=1001;
+        do {
+            a=a-3;
+            System.out.println(a);
+        } while (a<=1000 && a>2);
+    }
 }

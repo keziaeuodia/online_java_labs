@@ -12,7 +12,14 @@ public class Exercise_04 {
 
     public static void main(String[] args) {
 
-        // write code here
+        double pi = 3.14159, r = 3.14;
+        int h = 5;
+
+        double area=(2*pi*r*r) + (2*pi*r*h);
+        double perimeter= 2*pi*r;
+
+        System.out.println("Area of the cylinder is: " + area );
+        System.out.println("Perimeter of the cylinder is: " + perimeter);
 
     }
 }

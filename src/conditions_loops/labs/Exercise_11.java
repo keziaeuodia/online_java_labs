@@ -20,4 +20,122 @@ package conditions_loops.labs;
  */
 
 public class Exercise_11 {
+    public static void main (String[]args){
+        int a = 1;
+
+
+        for(;a<=10;a++){
+            System.out.print(a + " |");
+            if (a==10){
+                System.out.println();
+
+            }
+
+        }
+
+        for(a=1;a<=20;a++){
+            if(a%2==0 && a<10) {
+                System.out.print(a + " |");
+            }
+            if (a%2==0 && a>=10 && a<20){
+                System.out.print(a + "|");
+            }
+            if (a%2==0 && a>=20){
+                System.out.println(a + " |");
+            }
+
+        }
+        for(a=1;a<=30;a++){
+            if(a%3==0 && a<10) {
+                System.out.print(a + " |");
+            }
+            if (a%3==0 && a>=10 && a<30){
+                System.out.print(a + "|");
+            }
+            if (a%3==0 && a>=30){
+                System.out.println(a + " |");
+            }
+
+        }
+        for(a=1;a<=40;a++){
+            if(a%4==0 && a<10) {
+                System.out.print(a + " |");
+            }
+            if (a%4==0 && a>=10 && a<40){
+                System.out.print(a + "|");
+            }
+            if (a%4==0 && a>=40){
+                System.out.println(a + " |");
+            }
+
+        }
+        for(a=1;a<=50;a++){
+            if(a%5==0 && a<10) {
+                System.out.print(a + " |");
+            }
+            if (a%5==0 && a>=10 && a<50){
+                System.out.print(a + "|");
+            }
+            if (a%5==0 && a>=50){
+                System.out.println(a + " |");
+            }
+
+        }
+        for(a=1;a<=60;a++){
+            if(a%6==0 && a<10) {
+                System.out.print(a + " |");
+            }
+            if (a%6==0 && a>=10 && a<60){
+                System.out.print(a + "|");
+            }
+            if (a%6==0 && a>=60){
+                System.out.println(a + " |");
+            }
+
+        }
+        for(a=1;a<=70;a++){
+            if(a%7==0 && a<10) {
+                System.out.print(a + " |");
+            }
+            if (a%7==0 && a>=10 && a<70){
+                System.out.print(a + "|");
+            }
+            if (a%7==0 && a>=70){
+                System.out.println(a + " |");
+            }
+
+        }
+        for(a=1;a<=80;a++){
+            if(a%8==0 && a<10) {
+                System.out.print(a + " |");
+            }
+            if (a%8==0 && a>=10 && a<80){
+                System.out.print(a + "|");
+            }
+            if (a%8==0 && a>=80){
+                System.out.println(a + " |");
+            }
+
+        }
+        for(a=1;a<=90;a++){
+            if(a%9==0 && a<10) {
+                System.out.print(a + " |");
+            }
+            if (a%9==0 && a>=10 && a<90){
+                System.out.print(a + "|");
+            }
+            if (a%9==0 && a>=90){
+                System.out.println(a + " |");
+            }
+
+        }
+        for(a=1;a<=100;a++){
+
+            if (a%10==0){
+                System.out.print(a + "|");
+            }
+        }
+
+
+    }
 }

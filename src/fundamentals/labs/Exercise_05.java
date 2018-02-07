@@ -23,7 +23,16 @@ public class Exercise_05 {
         // assign input to variable as int
         int days = scanner.nextInt();
 
-        // write completed code here
+        long seconds= days*86400;
+
+        if (days>1) {
+            System.out.println(days+ " days are equal to "+ seconds + " seconds");
+        }
+        else {
+            System.out.println(days+ " day is equal to "+ seconds + " seconds");
+        }
+
+
 
     }
 }
