@@ -1,5 +1,7 @@
 package objects_classes_methods.labs;
 
+import java.util.Scanner;
+
 /**
  * Objects, Classes and Methods Exercise 1:
  *
@@ -19,14 +21,20 @@ package objects_classes_methods.labs;
 
 //class 1 controller main
 //two objects
-public class Safari {
+class Safari {
 
     private String ungulates;
     private String bigCats;
     private String reptiles;
     private static int animalCount = 0;
 
+    public Safari(){
+        animalCount++;
+    }
 
+    public static int getAnimalCount() {
+        return animalCount;
+    }
 
     public String getUngulates() {
         return ungulates;
@@ -52,12 +60,10 @@ public class Safari {
         this.reptiles = reptiles;
     }
 
-    public static int getAnimalCount() {
-        return animalCount;
-    }
+
 }
 
-public class Operation {
+class Operation {
 
     public static void main(String[] args) {
 
@@ -67,15 +73,20 @@ public class Operation {
         Safari animal2 = new Safari();
         animal2.setReptiles("crocodile");
 
-        
+        Safari animal3 = new Safari();
+        animal3.setBigCats("tiger");
+
+        Safari animal4 = new Safari();
+        animal4.setBigCats("lion");
+
+
+        System.out.println("Current animal in Safari exhibits are: " + Safari.getAnimalCount());
+
 
 
 
     }
-
-
 }
-
 
 //class 2
 //three instance variable with constructors

@@ -8,3 +8,10 @@ package objects_classes_methods.labs;
  *      Use System.out.println to demonstrate when the variables are changed.
  *
  */
+
+class Static{
+    static int a;
+    int b;
+
+
+}

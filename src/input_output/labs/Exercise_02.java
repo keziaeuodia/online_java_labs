@@ -1,5 +1,7 @@
 package input_output.labs;
 
+import java.io.*;
+
 /**
  * Input/Output Exercise 1: File encryption
  *
@@ -12,3 +14,66 @@ package input_output.labs;
  *
  */
 
+public class Exercise_02{
+    public static void main(String[] args) throws IOException {
+        BufferedReader in = null;
+        PrintWriter out = null;
+
+        try {
+            in = new BufferedReader(new FileReader("/home/kezia/Documents/coding_exercises/ioexercise_copy.txt"));
+            out = new PrintWriter(new FileWriter("/home/kezia/Documents/coding_exercises/ioexercise_copy2.txt"));
+            String l;
+            while ((l = in.readLine()) != null) {
+
+                int count = 0;
+                int numLoops = l.length();
+
+                while (numLoops > 0) {
+                    String character = String.valueOf(l.charAt(count));
+                    if (character.equalsIgnoreCase("-")) {
+                        character = "a";
+                    } else if (character.equalsIgnoreCase("~")) {
+                        character = "e";
+                    }
+                    out.print(character);
+                    count++;
+                    numLoops--;
+                }
+                out.println();
+            }
+        }
+
+//        try{
+//            in = new BufferedReader(new FileReader("/home/kezia/Documents/coding_exercises/ioexercise.txt"));
+//            out = new PrintWriter(new FileWriter("/home/kezia/Documents/coding_exercises/ioexercise_copy.txt"));
+//            String l;
+//            while ((l = in.readLine()) != null){
+//
+//                int count = 0;
+//                int numLoops = l.length();
+//
+//                while (numLoops>0){
+//                    String character = String.valueOf(l.charAt(count));
+//                    if (character.equalsIgnoreCase("a")){
+//                        character = "-";
+//                    }
+//                    else if (character.equalsIgnoreCase("e")){
+//                        character = "~";
+//                    }
+//                    out.print(character);
+//                    count++;
+//                    numLoops--;
+//                }
+//                out.println();
+//            }
+//        }
+        finally {
+            if (in != null){
+                in.close();
+            }
+            if (out != null){
+                out.close();
+            }
+        }
+    }
+}
