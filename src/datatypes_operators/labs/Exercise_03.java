@@ -21,13 +21,12 @@ public class Exercise_03 {
         System.out.print("Enter a name: ");
         String input = scanner.next();
 
-        int count=1;
+        int count = 1;
 
-        int namelength=input.length();
+        int namelength = input.length();
 
-        //take first letter
         String character = String.valueOf(input.charAt(0));
-        //take the rest
+
         String remains = input.substring(1);
 
 

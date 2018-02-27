@@ -29,8 +29,8 @@ public class Exercise_02{
         a = 10;
         b = 15;
         height = 5;
-        System.out.println(perimeter(12, 20));
-        System.out.println(vol());
+        System.out.println("Perimeter is: " + perimeter(12, 20));
+        System.out.println("Volume is: " + vol());
     }
 
     public static void main(String[] args) {

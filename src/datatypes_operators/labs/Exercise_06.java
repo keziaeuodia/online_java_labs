@@ -20,5 +20,15 @@ public class Exercise_06 {
     public static void main(String[] args) {
 
         int[][] twoDArray = new int[5][5];
+
+        int a;
+
+        for (int i=0; i < 5; ++i){
+            for (a = 0; a <5; a++){
+                twoDArray [i][a] = (i*15)+((a+1)*3);
+                System.out.print(twoDArray[i][a] + " ");
+            }
+            System.out.println();
+        }
     }
 }
