@@ -22,15 +22,11 @@ package conditions_loops.labs;
 public class Exercise_11 {
     public static void main (String[]args){
         int a = 1;
-
-
         for(;a<=10;a++){
             System.out.print(a + " |");
             if (a==10){
                 System.out.println();
-
             }
-
         }
 
         for(a=1;a<=20;a++){

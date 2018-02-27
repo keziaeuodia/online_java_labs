@@ -17,3 +17,71 @@ package objects_classes_methods.labs;
  */
 
 
+//class 1 controller main
+//two objects
+public class Safari {
+
+    private String ungulates;
+    private String bigCats;
+    private String reptiles;
+    private static int animalCount = 0;
+
+
+
+    public String getUngulates() {
+        return ungulates;
+    }
+
+    public void setUngulates(String ungulates) {
+        this.ungulates = ungulates;
+    }
+
+    public String getBigCats() {
+        return bigCats;
+    }
+
+    public void setBigCats(String bigCats) {
+        this.bigCats = bigCats;
+    }
+
+    public String getReptiles() {
+        return reptiles;
+    }
+
+    public void setReptiles(String reptiles) {
+        this.reptiles = reptiles;
+    }
+
+    public static int getAnimalCount() {
+        return animalCount;
+    }
+}
+
+public class Operation {
+
+    public static void main(String[] args) {
+
+        Safari animal1 = new Safari();
+        animal1.setBigCats("tiger");
+
+        Safari animal2 = new Safari();
+        animal2.setReptiles("crocodile");
+
+        
+
+
+
+    }
+
+
+}
+
+
+//class 2
+//three instance variable with constructors
+
+//class 3
+//three instance variable with constructors
+
+
+
