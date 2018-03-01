@@ -1,20 +1,29 @@
 Answer the following questions:
 
 1.) What is inheritance?
+    A program hierarchy where the subclass inherits the variables and methods that the parentclass/superclass has
 
 2.) Why do we use inheritance?
+    Because it allows us to reuse or override the codes in the parent class, so the code doesn't need to be rewritten over and over again
 
 3.) Provide a real world example where you think inheritance would be implemented.
+    Animals - Mammals - Marine Mammals - Dolphins
 
 4.) How does a class inherit another class?
+    By extending the superclass
 
 5.) How many levels can a hierarchy extend?
+    Unlimited
 
 6.) What is the "super" keyword used for?
+    To call the superclass
 
 7.) When a subclass object is created, in what order do the constructors execute?
+    Calling the superclass constructor super();
 
 8.) What is method overwriting?
+    Accessing a method in subclass that has the same return type and signature as a method in the superclass
 
 9.) How can method overwriting be beneficial?
+    It supports polymorphism, where we can still uses all the other methods as is, but we can override just one(or more) method that doesn't behave like the one in the superclass
 

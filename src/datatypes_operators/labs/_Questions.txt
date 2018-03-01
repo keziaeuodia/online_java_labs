@@ -2,44 +2,90 @@ Answer the following questions:
 
 
 1.) What are the names and uses of Java's eight primitive types?
+    boolean - true/false statement
+    char - ASCII code of characters
+    byte - 8 bits integer
+    short - unicode character
+    int - 32 bits integer
+    long - 64 bits integer
+    float - 32 bits float
+    double - 64 bits float
+
 
 2.) How do you declare and initialize an int variable called "x" with the value 42.
+    int x=42;
 
 3.) What happens if you initialize a double variable with the value of a int?
+    nothing, no loss of info.
 
 4.) How do you set an int variable to the value of a double?
+    the int cannot read the decimals.
 
 5.) What are the 5 arithmetic operators?
+    +, -, /, *, %
 
 6.) What are Relational operators used for? What is the result of using a relational operator?
+    To tests or defines some kind of relation between two entities
+    True/False
 
 7.) Demonstrate the use of a Relational operator.
+    a == b
+    a >= b
+    a <= b
+    a > b
+    a < b
+    a != b
 
 8.) What logical operators used for? What is the result of using a logical operator?
+    It is used to evaluate two booleans.
+    True/False
 
 9.) Demonstrate the use of a logical operator.
+    (a > 0) && (b > 0)
+    (a > 0) || (b > 0)
+    (a > 0) & (b > 0)
+    (a > 0) | (b > 0)
+    (a > 0) ^ (b > 0)
+    !(a > 0) & (b > 0)
 
 10.) How can you use the shorthand addition operator to add 10 to a variable "x"?
+    x += 10
 
 11.) What data type is a String?
+    Object type
 
 12.) Are string mutable?
+    No
 
 13.) How do you concatenate Strings?
+    Using +
 
 14.) Can you cast and int to a String or a String to an int? Why or why not?
 
+
 15.) What is an array?
+    An array is a collection of variables of the same type, referred to by a common name
 
 16.) What is the first index of an array?
+    0
 
 17.) Can you change the size of an array once it has been declared and initialized?
+    No
 
 18.) How do you print the 5th element in an array "exampleArray"?
+    exampleArray[5];
 
 19.) What are the two ways you can declare and initialize an array? Demonstrate both.
+    int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+    or
+
+    int[] array = new int[10];
+    int x = array[0];
 
 20.) How do you iterate through a multidimensional array?
+    Using nested for loops
 
 21.) What is the for-each loop used for?
+    For-each loop is used to iterate over a collection of variables, such as arrays
 
