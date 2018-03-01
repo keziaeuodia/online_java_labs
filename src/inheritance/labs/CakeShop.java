@@ -21,6 +21,20 @@ package inheritance.labs;
  *       - A Vehicle superclass, with Truck and Motorcycle subclasses.
  *       - A Restaurant superclass, with Gourmet and FastFood subclasses.
  *
- *
  */
+
+// class1 with 2 private instance variable
+
+public class CakeShop {
+    public static void main(String[] args) {
+        IceCream dessert1 = new IceCream(2, false);
+        System.out.println();
+        IceCream dessert2 = new IceCream(2, "Raspberry", "Cheesecake");
+        System.out.println();
+        Cakes cake1 = new Cakes("Chocolate","Cupcakes");
+        System.out.println("The total amount is $" + cake1.amout(2, 1.5));
+        System.out.println();
+
+    }
+}
 
