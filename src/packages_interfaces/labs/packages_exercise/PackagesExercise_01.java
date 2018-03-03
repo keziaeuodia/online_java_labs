@@ -1,4 +1,4 @@
-package packages_interfaces.labs;
+package packages_interfaces.labs.packages_exercise;
 
 /**
  * Packages Exercise 1: Protected modifier

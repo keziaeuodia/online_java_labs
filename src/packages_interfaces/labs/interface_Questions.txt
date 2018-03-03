@@ -1,16 +1,24 @@
 Answer the following questions:
 
 1.) What is an interface?
+    Interface is a group of methods with no body, which can be implemented and defined by a class
 
 2.) Why are interfaces implemented?
+    Because a lot of classes can have the same methods, but applying different codes
 
 3.) What is the implement keyword used for?
+    It is used to implement an interface in a class
 
 4.) How many interfaces can class implement?
+    One
 
 5.) Write a simple interface with one method.
+    public interface InterfaceExample{
+        public int weight();
+    }
 
 6.) Think of a real world application where interfaces are used. Describe it's purpose.
+    Game Console interface, which most likely need to implement start, run, shutdown methods
 
 7.) What is wrong with the following interface?
 
@@ -19,3 +27,5 @@ Answer the following questions:
             return x + y;
         }
     }
+
+    Interface should not have a body
