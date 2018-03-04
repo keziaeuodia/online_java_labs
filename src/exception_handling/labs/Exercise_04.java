@@ -10,6 +10,7 @@ import java.util.Scanner;
  */
 
 class TryCatch4 {
+
     public static void main(String args[]) {
         int array[] = new int[120];
 
@@ -24,25 +25,29 @@ class TryCatch4 {
 
         try {
             System.out.println("Before catch statement.");
-            System.out.println("The index " + a + " contains " + array[a]);
-        } catch (ArrayIndexOutOfBoundsException exc) {
+            System.out.println("The index " + a + " contains " + array[a] + "\n");
+
+
+            System.out.print("Enter a number to divide content: ");
+            Scanner div = new Scanner(System.in);
+            int b = div.nextInt();
+            System.out.println();
+
+            try {
+                System.out.println(array[a] + "divided by " + b + "= " + (array[a] / b));
+            } catch (ArithmeticException exc) {
+                System.out.println("Cannot divide by 0!");
+                exc.printStackTrace();
+
+                System.out.println("After catch statement.");
+            }
+        }
+        catch (ArrayIndexOutOfBoundsException exc) {
             System.out.println("Index out-of-bounds!");
             exc.printStackTrace();
         }
 
-        System.out.print("Enter a number to divide content: ");
-        Scanner div = new Scanner(System.in);
-        int b = div.nextInt();
-        System.out.println();
 
-        try {
-            System.out.println(array[a] + "divided by " + b + "= " + (array[a] / b));
-        } catch (ArithmeticException exc) {
-            System.out.println("Cannot divide by 0!");
-            exc.printStackTrace();
-
-            System.out.println("After catch statement.");
-        }
     }
 }
 

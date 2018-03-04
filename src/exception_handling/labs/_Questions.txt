@@ -1,24 +1,44 @@
 Answer the following questions:
 
 1.) What is exception handling?
+    A subsystem in Java that is used to gracefully handle errors a program might encounter
 
-2.) What is the exception hierarchy? What is the difference between the Exception class and the Error class?
+2.) What is the exception hierarchy?
+    Java's hierarchy of classes that represents exception, derived from a class called Throwable
+
+    What is the difference between the Exception class and the Error class?
+    Error class is related to errors that occur in the JVM, not the program,
+    Exception class represents errors that result from program activity.
 
 3.) What is a try/catch?
+    Try statement try to run the code blocks, and when an exception is thrown, it is caught by the catch statement
 
 4.) What exceptions have you come across thus far?
+    ArrayIndexOutOfBounds, ArithmaticExeption, NullPointerException,
 
 5.) How many catch statement can you have following a try?
+    More that one as long as they're different type of exception
 
 6.) How many try statements can you have preceding a catch?
+    One
 
 7.) What does the finally statement do in a try/catch/finally block?
+    A statement that execute no matter what the result of try catch is
 
-8.) Can you nest exceptions? If so, when would you nest an exception?
+8.) Can you nest exceptions? Yes
+    If so, when would you nest an exception?
+    When
 
 9.) If you want to catch an ArrayIndexOutOfBounds exception and an Exception exception,
-    which should you catch first? Why?
+    which should you catch first?
+    ArrayIndexOutOfBounds
+    Why?
+    Because it is more refined than Exception exception
 
-10.) How do you rethrow and exception? Why would you rethrow an exception?
+10.) How do you rethrow and exception?
+    By throwing the exception in one method and cathing it in another
+    Why would you rethrow an exception?
+    To allow multiple handlers access to the exception
 
 11.) What is the purpose of the throws keyword?
+    It is used to declare that a method may throw one or some exceptions
